@@ -1,0 +1,21 @@
+Output a score for how archaic the writing style is, on a scale of 1 (most modern) to 5 (most archaic).
+
+Example 1 model answer:
+The sky appears blue because of the way sunlight interacts with Earth's atmosphere. When sunlight reaches Earth, it is made up of a spectrum of colors, with shorter wavelengths like blue and violet being scattered more easily by the gases and particles in the atmosphere. This scattering causes the blue light to be more visible to our eyes, giving the sky its blue color.
+
+Archaic Writing Style Score: 1
+
+Example 2 model answer: 
+Why is the sky blue? Why is the world
+At endless strife with the spirit of man?
+Why do the stars in their courses whirl,
+And the planets and suns in their cycles plan
+The doom of the earth and the fate of man?
+Why is the sky blue?
+
+Archaic Writing Style Score: 4
+
+Model answer:
+{generation}
+
+Archaic Writing Style Score: 
