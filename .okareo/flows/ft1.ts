@@ -181,21 +181,21 @@ const main = async () => {
 		});
 		
 		// load the prompts for the model based checks
-		const archaicFewshotPrompt = fs.readFileSync(path.join(__dirname, '../flows/prompts/archaic.txt'), 'utf8');
-		const poeticFewshotPrompt = fs.readFileSync(path.join(__dirname, '../flows/prompts/poetic.txt'), 'utf8');
+		const archaicPrompt = fs.readFileSync(path.join(__dirname, '../flows/prompts/archaic.txt'), 'utf8');
+		const poeticPrompt = fs.readFileSync(path.join(__dirname, '../flows/prompts/poetic.txt'), 'utf8');
 
 		// define new custom checks (by prompting an LLM judge)
 		const custom_checks: CHECK_TYPE[] = [
 			{
 				name:"custom.Archaic", 
 				description: "Use LLM-as-a-judge to rate how archaic the output is.",
-				prompt: archaicFewshotPrompt,
+				prompt: archaicPrompt,
 				output_data_type: CheckOutputType.SCORE,
 			},
 			{
 				name:"custom.Poetic", 
 				description: "Use LLM-as-a-judge to rate how poetic the output is. ",
-				prompt: poeticFewshotPrompt,
+				prompt: poeticPrompt,
 				output_data_type: CheckOutputType.SCORE,
 			},
 		];
